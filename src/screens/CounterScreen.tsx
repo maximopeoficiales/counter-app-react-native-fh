@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { Fab } from "../components/Fab";
 
 export const CounterScreen = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState<number>(0);
 
   return (
     <View style={styles.container}>

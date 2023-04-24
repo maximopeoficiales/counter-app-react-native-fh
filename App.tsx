@@ -1,10 +1,15 @@
-import { CounterScreen } from "./src/screens/CounterScreen";
-import { HelloWorldScreen } from "./src/screens/HelloWorldScreen";
+import { SafeAreaView } from "react-native";
+import { PositionScreen } from "./src/screens/PositionScreen";
 
 const App = () => {
   return (
-    // <HelloWorldScreen/>
-    <CounterScreen/>
+    <SafeAreaView style={{ flex: 1 }}>
+      {/* <HelloWorldScreen /> */}
+      {/* <CounterScreen /> */}
+      {/* <BoxObjectModelScreen /> */}
+      {/* <DimensionsScreen /> */}
+      <PositionScreen />
+    </SafeAreaView>
   )
 }
 export default App;

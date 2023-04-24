@@ -1,6 +1,4 @@
-import { Platform } from "react-native";
-import { TouchableOpacity } from "react-native";
-import { StyleSheet, Text, TouchableNativeFeedback, View } from "react-native";
+import { Platform, StyleSheet, Text, TouchableNativeFeedback, TouchableOpacity, View } from "react-native";
 
 interface MyProps {
   onPress: () => void;
