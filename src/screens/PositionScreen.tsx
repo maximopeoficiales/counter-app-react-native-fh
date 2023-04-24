@@ -1,28 +1,24 @@
-import { StyleSheet, Text, View, useWindowDimensions } from 'react-native'
+import { StyleSheet, View } from 'react-native';
 
 export const PositionScreen = () => {
-  const { width, height } = useWindowDimensions();
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>W: {width.toFixed(2)}, H: {height.toFixed(2)}</Text>
       <View style={styles.boxPurple}></View>
       <View style={styles.boxOrange}></View>
+      <View style={styles.boxGreen}></View>
+      <View style={styles.boxRed}></View>
     </View>
   )
 }
 const styles = StyleSheet.create({
-  title: {
-    fontSize: 20,
-    marginVertical: 20,
-    textAlign: "center"
-  },
+
   container: {
-    flex: 1,
-    // width: 300,
-    // height: 300,
-    justifyContent: 'center',
-    alignItems: "center",
-    backgroundColor: "#28C4D9"
+    // flex: 1,
+    width: 400,
+    height: 400,
+    // justifyContent: 'center',
+    // alignItems: "center",
+    backgroundColor: "#28C4D9",
   },
   boxPurple: {
     width: 100,
@@ -30,17 +26,41 @@ const styles = StyleSheet.create({
     backgroundColor: "#5856D6",
     borderWidth: 10,
     borderColor: "white",
-    // top: 100,
-    // left: 100,
+    position: "absolute",
+    right: 0,
   },
   boxOrange: {
-    // position:"absolute",
+    position: "absolute",
     width: 100,
     height: 100,
     backgroundColor: "#F0A23B",
     borderWidth: 10,
     borderColor: "white",
-    top: -50,
-    left: 50,
+    bottom: 0,
+    right: 0,
+  },
+  boxGreen: {
+    position: "absolute",
+    width: 100,
+    height: 100,
+    backgroundColor: "green",
+    borderWidth: 10,
+    borderColor: "white",
+    bottom: 0,
+    left: 0,
+  },
+  boxRed: {
+    width: 100,
+    height: 100,
+    backgroundColor: "red",
+    borderWidth: 10,
+    borderColor: "white",
+    // position: "absolute",
+    // bottom: 0,
+    // left: 0,
+    // top: 0,
+    // right: 0,
+    // hace que todo lo comentado
+    // ...StyleSheet.absoluteFillObject
   }
 });
