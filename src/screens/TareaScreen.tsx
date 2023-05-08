@@ -15,25 +15,24 @@ export const TareaScreen = ({ }: MyProps) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "row",
+    justifyContent: 'space-between',
     backgroundColor: "#6C9BCF",
   },
   boxPurple: {
-    width: "auto",
-    height: "25%",
+    width: 100,
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#5C469C",
   },
   boxOrange: {
-    width: "auto",
-    height: "25%",
+    width: 100,
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#FC4F00",
   },
   boxBlue: {
-    width: "auto",
-    height: "50%",
+    width: 100,
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#19A7CE",
