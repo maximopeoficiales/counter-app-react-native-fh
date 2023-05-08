@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 interface MyProps {
 }
@@ -16,25 +16,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#6C9BCF",
-    justifyContent: "center",
   },
   boxPurple: {
-    width: 100,
-    height: 100,
+    width: "auto",
+    height: "25%",
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#5C469C",
   },
   boxOrange: {
-    width: 100,
-    height: 100,
+    width: "auto",
+    height: "25%",
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#FC4F00",
   },
   boxBlue: {
     width: "auto",
-    height: 100,
+    height: "50%",
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#19A7CE",
