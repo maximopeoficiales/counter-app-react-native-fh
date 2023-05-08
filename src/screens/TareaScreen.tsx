@@ -15,6 +15,7 @@ export const TareaScreen = ({ }: MyProps) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "row",
     justifyContent: 'center',
     backgroundColor: "#6C9BCF",
     alignItems: "center",
@@ -27,6 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#5C469C",
   },
   boxOrange: {
+    top: 50,
     width: 100,
     height: 100,
     borderWidth: 10,
