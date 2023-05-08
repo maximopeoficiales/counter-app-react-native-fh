@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#5C469C",
-    alignSelf: "flex-end"
   },
   boxOrange: {
     width: 100,
@@ -32,14 +31,12 @@ const styles = StyleSheet.create({
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#FC4F00",
-    // flex: 3,
   },
   boxBlue: {
-    width: 100,
+    width: "auto",
     height: 100,
     borderWidth: 10,
     borderColor: "white",
     backgroundColor: "#19A7CE",
-    alignSelf: "center",
   },
 });
